@@ -1,0 +1,236 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #c5c6cb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(2, 2, 2);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-dark {
+  background-color: #dfdfdf;
+}
+
+.footer {
+  background-color: #121111;
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
+  color: white;
+}
+
+.player {
+  margin-top: 65px;
+}
+
+.card {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 5px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup img {
+  width: 100%;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: #06D85F;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.navbar-nav {
+  --bs-nav-link-color: #a4c7f9;
+
+}
+
+
+
+.img-details {
+  width: 1500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  align-items: center;
+  /* Căn giữa the chiều dọc */
+  height: 100vh;
+}
+body{
+  background-color: #333;
+}
+.product-details{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-right: 100px;
+}
+.content {
+  position: relative !important;
+}
+
+.content-background {
+  height: 600px;
+  
+  background-size: cover;
+}
+
+.frame-black {
+  background: linear-gradient(to right, black 50%, rgba(0, 0, 0, 0) 100%);
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 6vw;
+  color: #FFFFFF;
+}
+
+.frame-black * a {
+  color: #FFFFFF !important;
+}
+.app{
+ 
+  color: white;
+}
+.content {
+	position: relative !important;
+}
+
+.content-background {
+	height: 600px;
+	
+	background-size: cover;
+}
+
+.frame-black {
+	background: linear-gradient(to right, black 50%, rgba(0, 0, 0, 0) 100%);
+	width: 100vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 6vw;
+	color: #FFFFFF;
+}
+
+.frame-black * a {
+	color: #FFFFFF !important;
+}
+.trailer-container {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 aspect ratio for responsive video */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.material-icon ul {
+  display: flex;
+  justify-content: flex-end; /* Căn phải */
+  list-style-type: none;
+  padding: 0;
+}
+
+.material-icon ul li {
+  margin-left: 20px; /* Khoảng cách giữa các biểu tượng */
+}
+
+.material-icon ul li a {
+  text-decoration: none;
+  color: #333; /* Màu cho biểu tượng */
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.material-icon ul li a:hover {
+  color: #06D85F; /* Màu khi di chuột qua biểu tượng */
+}
+
+.material-icon ul li a .material-icons {
+  font-size: 24px; /* Kích thước của biểu tượng */
+  margin-right: 5px; /* Khoảng cách giữa biểu tượng và văn bản */
+}
